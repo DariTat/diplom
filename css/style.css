@@ -84,7 +84,6 @@ body {
 }
 
 .intrend {
-  width: 100vw;
   margin-top: 68px;
 }
 .title_intrend {
@@ -205,6 +204,7 @@ body {
 }
 .news {
   flex-grow: 1;
+  margin-right: calc((130/1200)*100%);
 }
 .post {
   display: flex;
@@ -276,7 +276,7 @@ body {
 }
 
 .panel {
-  width: 272px;
+  max-width: 272px;
 }
 .newposts {
   width: 100%;
@@ -442,6 +442,9 @@ body {
   margin-bottom: 6px;
   border: 3px solid #ededed;
 }
+.tag_link:hover {
+  border-color: #b59f5b;
+}
 .themes_links {
   list-style-type: none;
   font-family: opensans-bold;
@@ -456,6 +459,9 @@ body {
   display: block;
   border-bottom: 3px solid #ededed;
   padding: 17px 0;
+}
+.themes_link:hover {
+  color: #b59f5b;
 }
 .themes_nmbr{
   vertical-align: super;
@@ -843,6 +849,7 @@ body {
   }
   .post_image {
     max-width: 391px;
+    min-width: 351px;
     margin-right: 0;
     margin-bottom: 17px;
   }
@@ -864,7 +871,7 @@ body {
     flex-wrap: wrap;
   }
   .product {
-    width: 50%;
+    width: calc((100% - 1.69%)/2);
     flex-grow: 0;
     box-sizing: border-box;
   }
@@ -905,7 +912,7 @@ body {
 }
 @media (max-width: 1199px) and (orientation: portrait) {
   .trend {
-    width: 50%;
+    width: calc((100% - 4px)/2);
   }
   .trend1, .trend2 {
     margin-bottom: 4px;
@@ -925,7 +932,7 @@ body {
 /*mobile version*/
 @media (max-width: 640px) {
   .header {
-  background-image: url("../images/banner-mobile.jpg");
+    background-image: url("../images/banner-mobile.jpg");
   }
   .container {
     max-width: 360px;
@@ -1002,6 +1009,9 @@ body {
   .panel_title::after {
     top: 25px;
     left: calc(50% - 33px);
+  }
+  .search {
+    justify-content: space-between;
   }
   .search, .distribution, .tags, .themes {
     margin-bottom: 45px;
