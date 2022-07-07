@@ -346,7 +346,7 @@ body {
   margin-bottom: 60px;
 }
 .form_search {
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
   padding: 0 38px 0 19px;
   height: 100%;
@@ -928,6 +928,7 @@ body {
 }
 /*mobile version*/
 @media (max-width: 767px) {
+	
   .header {
     background-image: url("../images/banner-mobile.jpg");
   }
@@ -1010,6 +1011,12 @@ body {
   .search {
     justify-content: space-between;
   }
+  
+  .search_label {
+  	display: block; 
+  	width: 100%; 
+  }
+  
   .search, .distribution, .tags, .themes {
     margin-bottom: 45px;
   }
